@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <script>
+    function getUrlVars() {
+      var vars = {};
+      var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+          vars[key] = value;
+      });
+      return vars;
+    }
+    
+    var redirectid = getUrlVars()["id"];
+    window.location.replace("beatsaver://" + redirectid);
+    </script>
+    <meta charset="utf-8">
+    <title>coolymike's OneClick Redirect</title>
+    <meta name="description" content="Redirecting to OneClick">
+    <style>
+      body {
+        font-size: 2vw;
+        background-color: rgb(17, 17, 17);
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+  Please enable JavaScript for this page to work
+  </body>
+
+</html>
